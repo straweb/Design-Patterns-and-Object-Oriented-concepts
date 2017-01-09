@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0CF095F-4548-4C0F-99D4-082F72AB6310}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Design_Patterns</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examples\constructorinjection.cs" />
+    <Compile Include="Examples\Multiple-Inheritance-Pattern.cs" />
+    <Compile Include="Examples\polymorphism.cs" />
+    <Compile Include="Examples\Abstraction.cs" />
+    <Compile Include="Examples\Encapsulation.cs" />
+    <Compile Include="Examples\Inheritance.cs" />
+    <Compile Include="Examples\abstractfactory-bags.cs" />
+    <Compile Include="Examples\adapter-pluggable-theory.cs" />
+    <Compile Include="Examples\adapter-theory.cs" />
+    <Compile Include="Examples\adapter-twoway-seabird.cs" />
+    <Compile Include="Examples\bridge-openbook.cs" />
+    <Compile Include="Examples\bridge-theory.cs" />
+    <Compile Include="Examples\builder-bags.cs" />
+    <Compile Include="Examples\builder-theory.cs" />
+    <Compile Include="Examples\chain-bank.cs" />
+    <Compile Include="Examples\chain-theory-exception.cs" />
+    <Compile Include="Examples\chain-theory.cs" />
+    <Compile Include="Examples\command-multiReceiver.cs" />
+    <Compile Include="Examples\command-pastePrint.cs" />
+    <Compile Include="Examples\command-theory.cs" />
+    <Compile Include="Examples\composite-photolibrary.cs" />
+    <Compile Include="Examples\composite-theory-ns.cs" />
+    <Compile Include="Examples\decorator-theory.cs" />
+    <Compile Include="Examples\decorator-photo.cs" />
+    <Compile Include="Examples\facade-theory-main.cs" />
+    <Compile Include="Examples\facade-theory-ns.cs" />
+    <Compile Include="Examples\factorymethod-avocados.cs" />
+    <Compile Include="Examples\flyweight-photogroup.cs" />
+    <Compile Include="Examples\flyweight-theory-ns.cs" />
+    <Compile Include="Examples\iterator-linq.cs" />
+    <Compile Include="Examples\Iterator-theory.cs" />
+    <Compile Include="Examples\mediator-chatroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\mediator-theory.cs" />
+    <Compile Include="Examples\memento-example.cs" />
+    <Compile Include="Examples\memento-theory.cs" />
+    <Compile Include="Examples\observer-theory.cs" />
+    <Compile Include="Examples\prototype-theory-main.cs" />
+    <Compile Include="Examples\prototype-theory-ns.cs" />
+    <Compile Include="Examples\proxy-spacebook.cs" />
+    <Compile Include="Examples\proxy-theory.cs" />
+    <Compile Include="Examples\singleton-theory-lazy-generic.cs" />
+    <Compile Include="Examples\singleton-theory-lazy.cs" />
+    <Compile Include="Examples\singleton-theory.cs" />
+    <Compile Include="Examples\state-game.cs" />
+    <Compile Include="Examples\state-theory.cs" />
+    <Compile Include="Examples\strategy-sorting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examples\strategy-theory.cs" />
+    <Compile Include="Examples\templatemethod-theory.cs" />
+    <Compile Include="Examples\visitor-course.cs" />
+    <Compile Include="Examples\visitor-theory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Examples\constructorinjection.resx">
+      <DependentUpon>constructorinjection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\decorator-theory.resx">
+      <DependentUpon>decorator-theory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\decorator-photo.resx">
+      <DependentUpon>decorator-photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\flyweight-photogroup.resx">
+      <DependentUpon>flyweight-photogroup.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
