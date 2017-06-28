@@ -1,5 +1,7 @@
 #Design-Patterns-and-Object-Oriented-concepts
 
+[![Join the chat at https://gitter.im/straweb/Design-Patterns-and-Object-Oriented-concepts](https://badges.gitter.im/straweb/Design-Patterns-and-Object-Oriented-concepts.svg)](https://gitter.im/straweb/Design-Patterns-and-Object-Oriented-concepts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **Structural Patterns: Decorator, Proxy, Bridge, Composite, Flyweight, Adapter and Façade**
 * Decorator pattern theory code (decorator-theory.cs) 
 * Decorator pattern example code - Photo Decorator (decorator-photo.cs)
